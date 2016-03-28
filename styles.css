@@ -1,16 +1,60 @@
 /* Voting box */
 #main_section{
-	padding: 50px;
-	background-color: #d9d9d9;
+	padding: 20px;
+	background-color: lightblue;
 	box-shadow: black 0.3em 0.3em 0.3em;
 }
 
 #main_header{
 	text-align: center;
-	color: WHITE;
+	color: blue;
 }
 
 body{
+<<<<<<< HEAD
+=======
+	background-image: url("imgs/bg.jpg");
+	background-color: white;
+>>>>>>> c7fb04b009cff8cf181655de674b1185e1efc983
 	background-repeat: no-repeat;
 	background-size: 100%, 100%; 
+	padding: 35px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 40px;
+    padding: 30px;
+}
+
+p {
+    font-family: "Verdana";
+    font-size: 20px;
+    text-align: center;
+}
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+button {
+	border-radius: 8px;
+	font-family: "Verdana";
+    font-size: 15px;
+    text-align: center;
 }
