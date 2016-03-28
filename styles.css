@@ -15,6 +15,7 @@ body{
 	background-color: white;
 	background-repeat: no-repeat;
 	background-size: 100%, 100%; 
+	padding: 35px;
 }
 
 h1 {
@@ -30,7 +31,24 @@ p {
     font-size: 20px;
     text-align: center;
 }
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
 
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
 button {
 	border-radius: 8px;
 	font-family: "Verdana";
