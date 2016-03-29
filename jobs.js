@@ -45,6 +45,10 @@ id = setInterval(function() {
         var str_min;
         var str_sec;
         
+        if((seconds)%60 == 0){
+          minutes--;
+        }
+
         if(minutes < 10){
            str_min = "0" + minutes.toString();
         }
