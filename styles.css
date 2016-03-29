@@ -10,6 +10,10 @@
 	color: blue;
 }
 
+#machine_name{
+	display: inline-block; 
+}
+
 /*NAV BAR*/
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,

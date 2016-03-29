@@ -14,7 +14,7 @@
 
 </head>
 
-<body style="padding: 35px" onload="countDown(30);">
+<body style="padding: 35px">
 	<div id='cssmenu'>
 	<ul>
    		<li class='active'><a href='#'>Dashboard</a></li>
@@ -25,8 +25,10 @@
 	</div>
 
 	<h1>Hello Lee</h1>
-	<div id="main_section">
-		<h5 id=machine_name></h5>
+	<div id="main_section" onclick="countDown(30);">
+
+		<div id=machine_name></div><div id="bal">Bal:  $10.50</div></br>
+		
 		<div id="time"><h1>Time Remaining </br>00:00</h1></div>
 		<div id="buttons" align="center">
 			<button align="center" class="btn btn-default" type="button">Pause</button>
