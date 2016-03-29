@@ -4,23 +4,37 @@ function machine_ider(){
     document.getElementById("bal").innerHTML = "Bal: $9.00";
 }
 
+
+function pauseTimer() {
+  isPaused=true;
+  countDown(id);
+  stopTimer()
+}
+
 function countDown(time){
 var timeLabel = document.getElementById("time");
 var counter = time * 60;
 var minutes = time - 1; 
 var newElement = document.createElement("p");
 var id;
+var isPaused=false;
 
 machine_ider();
 
 timeLabel.parentNode.replaceChild(newElement, timeLabel);
 
+if(!isPaused)
+  counter = time * 60;
+  
+
 id = setInterval(function() {
-    counter--;
+    
     if(counter < 0) {
         newElement.parentNode.replaceChild(timeLabel, newElement);
-        clearInterval(id);
+        stopTimer();
+        isPaused=false;
     } else {
+        counter--;
         var seconds = counter;
         var str_min;
         var str_sec;
@@ -43,17 +57,20 @@ id = setInterval(function() {
           str_sec = (seconds%60).toString();
         }
 
-        
-        
-
         newElement.innerHTML = "<h1>Time remaining </br> " + str_min + " : " + str_sec + "</h1>";
     }
 }, 1000);
+
 }
 
+function stopTimer() {
+  clearInterval(id);
+}
 
-
-
+function resumeTimer() {
+  isPaused=true;
+  countDown(id);
+}
 
 // NAV BAR
 (function($) {

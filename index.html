@@ -25,15 +25,15 @@
 	</div>
 
 	<h1>Hello Lee</h1>
-	<div id="main_section" onclick="countDown(30);">
+	<div id="main_section">
 
 		<div id=machine_name></div><div id="bal">Bal:  $10.50</div></br>
 		
 		<div id="time"><h1>Time Remaining </br>00:00</h1></div>
 		<div id="buttons" align="center">
-			<button align="center" class="btn btn-default" type="button">Start</button>
-			<button align="center" class="btn btn-default" type="button">Pause</button>
-			<button align="center" class="btn btn-default" type="button">Stop</button>
+			<button align="center" onclick="countDown(30);" class="btn btn-default" type="button">Start</button>
+			<button align="center" onclick="pauseTimer()" class="btn btn-default" type="button">Pause</button>
+			<button align="center" onclick="stopTimer()" class="btn btn-default" type="button">Stop</button>
 		</div>
 	</div>
 	</form>
