@@ -29,7 +29,7 @@ function countDown(time){
 function countDown(time){
 var timeLabel = document.getElementById("time");
 var counter = time * 60;
-var minutes = time; 
+var minutes = time - 1; 
 var newElement = document.createElement("p");
 var id;
 
@@ -66,7 +66,7 @@ id = setInterval(function() {
         
         
 
-        newElement.innerHTML = "Time remaining: " + str_min + " : " + str_sec;
+        newElement.innerHTML = "<h1>Time remaining </br> " + str_min + " : " + str_sec + "</h1>";
     }
 }, 1000);
 }
