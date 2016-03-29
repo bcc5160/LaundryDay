@@ -25,9 +25,11 @@ function countDown(time){
 
 }
 
-function timer(time){
+
+function countDown(time){
 var timeLabel = document.getElementById("time");
 var counter = time * 60;
+var minutes = time; 
 var newElement = document.createElement("p");
 var id;
 
@@ -39,7 +41,28 @@ id = setInterval(function() {
         newElement.parentNode.replaceChild(timeLabel, newElement);
         clearInterval(id);
     } else {
-        newElement.innerHTML = "Time remaining: " + counter.toString() + " seconds.";
+        var seconds = counter;
+        var str_min;
+        var str_sec;
+        
+        if(minutes < 10){
+           str_min = "0" + minutes.toString();
+        }
+        else{
+          str_min = minutes.toString();
+        }
+
+        if((seconds%60) < 10){
+          str_sec = "0" + (seconds%60).toString();
+        }
+        else{
+          str_sec = (seconds%60).toString();
+        }
+
+        
+        
+
+        newElement.innerHTML = "Time remaining: " + str_min + " : " + str_sec;
     }
 }, 1000);
 }
