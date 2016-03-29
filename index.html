@@ -10,14 +10,28 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="jobs.js"></script>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body style="padding: 35px" onload="countDown(30);">
+	<div id='cssmenu'>
+	<ul>
+   		<li class='active'><a href='#'>Dashboard</a></li>
+   		<li><a href='#'>My Account</a></li>
+   		<li><a href='#'>Machine Settings</a></li>
+   		<li><a href='#'>Contact</a></li>
+	</ul>
+	</div>
+
 	<h1>Hello Lee</h1>
 	<div id="main_section">
-		<!--<button align="center" class="btn btn-default" type="button" onclick="countDown(30)">Start</button> -->
+		<h5 id=machine_name></h5>
 		<div id="time"><h1>Time Remaining </br>00:00</h1></div>
+		<div id="buttons" align="center">
+			<button align="center" class="btn btn-default" type="button">Pause</button>
+			<button align="center" class="btn btn-default" type="button">Stop</button>
+		</div>
 	</div>
 	</form>
 </body>
